@@ -1,9 +1,0 @@
-.dropzone .empty {
-  background: var(--black);
-  color: var(--white);
-}
-
-.dropzone svg {
-  width: 100px;
-  height: 100px;
-}
