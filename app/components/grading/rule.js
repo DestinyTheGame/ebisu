@@ -10,10 +10,19 @@ import './style.css';
  * @constructor
  */
 export default function Rule({ onChange,  ...query }) {
-  function remove(e) {
+  /**
+   * Remove the given que
+   *
+   * @param {[type]} e [description]
+   * @returns {[type]} [description]
+   */
+  function remove(name) {
     if (e && e.preventDefault) e.preventDefault();
 
-    onChange && onChange(undefined);
+    const clone = { ...query };
+    delete clone[name];
+
+    onChange && onChange(undefined, clone);
   }
 
   return (
@@ -29,7 +38,7 @@ export default function Rule({ onChange,  ...query }) {
             <strong title={ queries[name] }>{ name.split('.').map(upfirst).join('.') }</strong>
             { query[name] }
 
-            <a href="#" className="btn btn-clear" aria-label="Close" role="button" onClick={ remove }></a>
+            <a href="#" className="btn btn-clear" aria-label="Close" role="button" onClick={ remove.bind(remove, name) }></a>
           </div>
         ))
       }
