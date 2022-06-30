@@ -1,0 +1,13 @@
+.chip {
+  background: var(--black);
+  color: var(--white);
+}
+
+.chip strong {
+  padding-right: 5px
+}
+
+.chip-add {
+  padding: 0.2rem;
+  fill: var(--white);
+}

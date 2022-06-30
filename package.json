@@ -1,0 +1,49 @@
+{
+  "name": "ebisu",
+  "version": "1.0.0",
+  "description": "Destiny Vault Management Application",
+  "scripts": {
+    "test": "c8 mocha './test/*.test.js'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o docs-build"
+  },
+  "author": "Arnout Kazemier",
+  "license": "UNLICENSED",
+  "exports": {
+    "./constants": "./library/constants.js",
+    "./armor": "./library/armor.js",
+    "./vault": "./library/vault.js",
+    "./grading": "./library/grading.js",
+    "./character": "./library/character.js",
+    "./sources/csv": "./library/sources/csv.js",
+    "./armor-set": "./library/armor-set.js",
+    "./compare/close": "./library/compare/close.js",
+    "./compare/quality": "./library/compare/quality.js",
+    "./compare/duplicate": "./library/compare/duplicate.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "0.0.13",
+    "assume": "^2.3.0",
+    "babel-loader": "^8.2.5",
+    "c8": "^7.11.3",
+    "classnames": "^2.3.1",
+    "lodash.groupby": "^4.6.0",
+    "mocha": "^10.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.1",
+    "react-icons": "^4.4.0",
+    "victory": "^36.5.3"
+  },
+  "dependencies": {
+    "csv-parse": "^5.2.0"
+  }
+}
