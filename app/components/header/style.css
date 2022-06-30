@@ -1,0 +1,22 @@
+.navbar {
+  font-size: 16px;
+  padding-bottom: 20px
+}
+
+.navbar .btn.btn-link {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.navbar .btn.btn-link:hover,
+.navbar .btn.btn-link:focus,
+.navbar .btn.btn-link.active {
+  color: var(--accentbg);
+  box-shadow: none;
+  border-bottom: 3px solid var(--white);
+}
+
+.navbar .name {
+  font-family: 'Comfortaa', monospace;
+  margin-left: 10px
+}
