@@ -26,6 +26,7 @@ jobs:
             .storybook
             .gitignore
             app
+            docs
             library
             stories
             test
