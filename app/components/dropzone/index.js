@@ -32,22 +32,22 @@ export default function Dropzone() {
 
   return (
     <>
-    <Header />
-    <div className="dropzone">
-      { failed && <Alert error={ failed } /> }
-      <div { ...getRootProps() }>
-        <div className="empty">
-          <input { ...getInputProps() } />
+      <Header />
+      <div className="dropzone">
+        { failed && <Alert error={ failed } /> }
+        <div { ...getRootProps() }>
+          <div className="empty">
+            <input { ...getInputProps() } />
 
-          <div className="empty-icon">
-            <FaFileCsv />
+            <div className="empty-icon">
+              <FaFileCsv />
+            </div>
+
+            <h5 className="empty-title">Import the destinyArmor.csv</h5>
+            <p className="empty-subtitle">Drag 'n' drop the .csv or click to select</p>
           </div>
-
-          <h5 className="empty-title">Import the destinyArmor.csv</h5>
-          <p className="empty-subtitle">Drag 'n' drop the .csv or click to select</p>
         </div>
       </div>
-    </div>
     </>
   );
 }
