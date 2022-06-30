@@ -20,7 +20,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: main        # The branch the action should deploy to.
           folder: docs-build  # The folder that the build-storybook script generates files.
-          target_folder: docs # The folder that we serve our Storybook files from
+          target-folder: docs # The folder that we serve our Storybook files from
           clean: true         #
           clean-exclude: |
             .storybook
