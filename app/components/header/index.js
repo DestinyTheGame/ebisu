@@ -12,7 +12,7 @@ import './style.css';
 const socials = [
   ["https://twitter.com/FpsEden", "Follow me on Twitter for bad takes", <FaTwitter />],
   ["https://discord.gg/N9Q4Ys8MNK", "Join our Discord to ask questions", <FaDiscord />],
-  ["https://github.com/3rd-Eden", "GitHub, if you're looking to contribute", <FaGithubAlt />]
+  ["https://github.com/DestinyTheGame/ebisu", "GitHub, if you're looking to contribute", <FaGithubAlt />]
 ];
 
 export default function Header({ items }) {
