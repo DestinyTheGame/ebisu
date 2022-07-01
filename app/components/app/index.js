@@ -5,6 +5,12 @@ import Header from '../header';
 
 import './styles.css';
 
+/**
+ * The actual application when the data is loaded.
+ *
+ * @param {Array} characters Available characters.
+ * @constructor
+ */
 export default function App({ characters }) {
   const [active, setActive ] = useState(characters[0]);
   const items = characters.map(function map(char) {

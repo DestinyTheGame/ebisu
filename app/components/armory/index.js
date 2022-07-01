@@ -1,8 +1,14 @@
 import { specification } from 'ebisu/constants';
-import Rule from '../grading/rule.js';
 import Focusing from '../charts/stacked';
+import Rule from '../grading/rule.js';
 import './styles.css';
 
+/**
+ * Representation of a single character's armor set.
+ *
+ * @param {[type]} character [description]
+ * @constructor
+ */
 export default function Armory({ character }) {
   return (
     <div className="armory">
