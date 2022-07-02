@@ -1,9 +1,25 @@
-.dropzone .empty {
-  background: var(--black);
-  color: var(--white);
+.dropzone {
+  text-align: left
 }
 
 .dropzone svg {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+}
+
+.dropzone .steps svg {
+  width: 16px;
+  height: 16px;
+}
+
+.drop-container {
+  border: 2px dashed var(--grey);
+  padding: var(--padding);
+}
+
+.drop-target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
